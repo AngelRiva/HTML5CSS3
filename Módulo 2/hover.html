@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <link rel="shortcut icon" href="Exercícios/Imagens/Angel.ico" type="image/x-icon">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p{
+            display: none;
+        }
+        div:hover >p {
+            display: block;
+            color: white;
+            background-color: rgb(249, 122, 122);
+            width: 300px;            
+        }
+        div hover{
+            color: red;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do Exemplo</p>
+
+</body>
+</html>
+
+<!--Note que o texto escondido foi criado dentro de um parágrafo que está dentro (indentado) na DIV linha 34. 
+    
+O Hover foi criado no style:
+div > p = siginifica que há um parágrafo filho (subordinado) a DIV 
+
+A div hover > p{ abaixo serve para configurar o parágrafo escondido dentro da div
+
+hover serve para configurar o "passe o  mouse" é o comando que possibilita uma ação ao passar o mouse por cima de algum elemento do site
+
+Este recurso "hover" serve como um protótipo para o recurso de drop de menu por exemplo, quando eu passo o mouse em determinado elemento do site, desce um menu...-->

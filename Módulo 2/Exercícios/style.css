@@ -1,0 +1,48 @@
+@charset "utf-8"; 
+/* Esta regra é opcional, porém, é recomendável para evitar problemas com acentuação.
+em HTML é id, em CSS é #
+em HTML é class, em CSS é "." (ponto)
+
+*/
+
+body{
+    background-color: #7B6C8E;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+h1#principal {
+    text-align: center;
+/* Este é o h1 principal que recebeu este id no html para que pudesse ser formatado de maneira isolada, exclusiva, difente dos demais h1*/
+    background-color: white;
+}
+
+h1{
+        color: #302839
+}
+
+h2{
+        color: #302839    
+}
+
+.basico {
+        color: #4E46B6;
+        text-decoration-line: underline;
+        
+}   
+.intermediario{
+        color: #a9bd46;
+        }
+
+.avançado{
+        color: #b89251;
+        
+}
+
+/*Criando as classes eu consigo alterar vários elementos do site subrodinados a esta classe com um único comando, como eu fiz acima. No site, tudo o que se chama "classe básico" tem uma cor, "intermediario, outra e etc. Vale a pena esta configuração pois deixa o código mais limpo e as alterações / ajustes mais dinâmicos*/
+
+.destaque{
+    color: lawngreen;
+}
+/*Aqui eu criei um "marcatexto* no trecho do texto em destaque no site. Pra criar eu fui no html e depois do <p class="destaque">. Como ru tinha definido que tudo em destaque será da cor verde marca texto, foi só selecionar o texto que desejei destacar e colocar dentro da tag span com a classe destaque./
+
