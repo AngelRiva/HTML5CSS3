@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas no Site</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table {
+        width: 400px;
+        height: 400px;
+        border-collapse: separate; 
+        
+    }
+    /* Border-collapse para manter um espaço entre as células*/
+    tr{
+        background-color: lightgray;
+    }
+    
+    td {
+        border: 1px solid black;
+        padding: 10px;
+        text-transform: uppercase;
+    /* text-transform para maiúsculas*/
+        vertical-align:bottom;
+    /* Alinhamento vertical - aqui em bottom*/    
+        
+
+    }
+</style>
+<body>
+    <h1>
+        Usando Tabelas em Sites
+    </h1>
+    <!-- Hierarquia de Tabelas Simples:
+        TABLE = tag de tabela
+            table row = linha de tabela (dentro da tabela) / a tag é: "tr"
+                table header = cabeçalho 
+                table data = dados de tabela -> ambos dentro (indentado) na table row
+    -->
+    <table>
+        <tr> <!-- primeira linha com 3 valores: a1, b1, c1 -->
+             <td>a1</td> 
+             <td>b1</td>
+             <td>c1</td>
+        </tr>
+        <tr> <!-- segunda linha com 3 valores: a2, b2, c2 -->
+             <td>a2</td> 
+             <td>b2</td>
+             <td>c2</td>
+        </tr>
+        <tr> <!-- terceira linha com 3 valores: a3, b3, c3 -->
+            <td>a3</td> 
+            <td>b3</td>
+            <td>c3</td>
+        </tr>
+        <tr> <!-- quarta linha com 3 valores: a3, b3, c3 -->
+            <td>a4</td> 
+            <td>b4</td>
+            <td>c4</td>
+        </tr> 
+    </table>
+</body>
+</html>
