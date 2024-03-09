@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colunas</title>
+    <link rel="shortcut icon" href="Angel.ico" type="image/x-icon">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td{
+            border: 1px solid black; 
+            padding: 8px;
+        }
+        col.cnome{
+            background-color: lightgrey;
+        }
+/* Como eu criei abaixo a tag colgroup e suas classes que são o nome de cada coluna, eu consigo, facilmente, criar uma configuração para a coluna escolhida ou as colunas escolhidas */
+
+    </style>
+</head>
+    
+<body>
+    <h1>Configurando Colunas em Tabelas</h1>
+    
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+
+<!-- Eu posso criar um col com class "cgrupo" span="2" e configurar acima no css o"col.cgrupo" e assim a configuração será aplicada em 2 colunas simultaneamente-->       
+
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+
+        </tr>          
+        
+        <tr>
+            <td>Angel</td>
+            <td>Masculino</td>
+            <td>55</td>
+            <td>Escrivão de Polícia</td>
+        </tr>
+        <tr>
+            <td>Marcia</td>
+            <td>Feminino</td>
+            <td>42</td>
+            <td>Investigadora de Polícia</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>Masculino</td>
+            <td>28</td>
+            <td>Agente de Polícia</td>
+        </tr>
+        <tr>
+            <td>Rafael</td>
+            <td>Masculino</td>
+            <td>46</td>
+            <td>Perito Criminal</td>
+        </tr>
+        <tr>
+            <td>Gabriela</td>
+            <td>Feminino</td>
+            <td>45</td>
+            <td>Delegada de Polícia</td>
+        </tr>
+        <tr>
+            <td>Tatiana</td>
+            <td>Feminino</td>
+            <td>38</td>
+            <td>Papiloscopista</td>
+        </tr>
+    </table>
+</body>
+</html>
