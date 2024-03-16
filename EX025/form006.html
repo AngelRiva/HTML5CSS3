@@ -31,7 +31,9 @@
     </p>
     <p>
         <label for="inivel">Nível de Satisfação: </label>
-        <input type="range" name="nivel" id="inivel">
+        <input type="range" name="nivel" id="inivel" min="0" max="10" value="5" oninput="ival.innerHTML = Number (inivel.value)">
+        <output id="ival">5</output>
+<!-- Aqui usei o comando oninput com a variável ival para mostra através do JS output o nível da barra do range. A barra range, por padrão estará no nível 5 e o valor mudará conforme a interação com a barra de satisfação-->
     </p>
 
     <p>
